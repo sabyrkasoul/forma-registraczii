@@ -224,3 +224,29 @@ svg * {
     scroll-behavior: auto !important;
   }
 }
+
+:root {
+  --color-dark: #232323;
+  --color-light: #FFFFFF;
+
+  --color-page-bg: #F4F1EA;
+  --color-section-bg: #FFFDF9;
+
+  --color-description: rgb(111 106 100 / 0.92);
+
+  --color-label: #4A4641;
+  --color-input-bg: #FAF8F4;
+  --color-input-border: #E7E1D8;
+
+  --border-radius: 20px;
+  --border-radius-small: 16px;
+  --border-radius-large: 32px;
+  --border: 1px solid var(--color-input-border);
+
+  --font-family-base: 'Segoe UI', sans-serif;
+
+  --input-height: 54px;
+  --button-height: 58px;
+
+  --transition-duration: 0.2s;
+}
