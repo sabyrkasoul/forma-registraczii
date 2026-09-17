@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <section class="registration">
+      <header class="registration__header">
+        <h1 class="registration__title">Создайте профиль в Bloom</h1>
+        <p class="registration__description">
+          Сохраните любимые букеты, отслеживайте заказы и получайте персональные предложения.
+        </p>
+      </header>
+      <form class="registration__form form" action="https://postman-echo.com/post" method="POST">
+        <div class="form__field field">
+          <label class="field__label" for="firstname">Имя</label>
+          <input
+            class="field__input"
+            id="firstname"
+            name="name"
+            type="text"
+            placeholder="Иван"
+          >
+        </div>
+        <div class="form__field field">
+          <label class="field__label" for="surname">Фамилия</label>
+          <input
+            class="field__input"
+            id="surname"
+            name="surname"
+            type="text"
+            placeholder="Соколов"
+          >
+        </div>
+        <div class="form__field field">
+          <label class="field__label" for="email">E-mail</label>
+          <input
+            class="field__input"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="ivan@example.com"
+          >
+        </div>
+        <div class="form__field field">
+          <label class="field__label" for="password">Пароль</label>
+          <input
+            class="field__input"
+            id="password"
+            name="password"
+            type="password"
+            placeholder="*******"
+          >
+        </div>
+        <div class="form__field field">
+          <label class="field__label" for="password-again">Повторите пароль</label>
+          <input
+            class="field__input"
+            id="password-again"
+            name="password-again"
+            type="password"
+            placeholder="*******"
+          >
+        </div>
+        <label class="form__checkbox checkbox">
+          <input
+            class="checkbox__input"
+            type="checkbox"
+            name="agreement"
+          >
+          <span class="checkbox__label">
+            Я принимаю условия использования сервиса и политику обработки персональных данных.
+          </span>
+        </label>
+        <button class="form__button button" type="submit">
+          Создать аккаунт
+        </button>
+      </form>
+    </section>
+  </body>
+</html>
