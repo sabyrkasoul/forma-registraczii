@@ -23,6 +23,7 @@
             name="name"
             type="text"
             placeholder="Иван"
+            required
           >
         </div>
         <div class="form__field field">
@@ -33,6 +34,7 @@
             name="surname"
             type="text"
             placeholder="Соколов"
+            required
           >
         </div>
         <div class="form__field field">
@@ -43,6 +45,7 @@
             name="email"
             type="email"
             placeholder="ivan@example.com"
+            required
           >
         </div>
         <div class="form__field field">
@@ -53,6 +56,7 @@
             name="password"
             type="password"
             placeholder="*******"
+            required
           >
         </div>
         <div class="form__field field">
@@ -63,14 +67,17 @@
             name="password-again"
             type="password"
             placeholder="*******"
+            required
           >
         </div>
         <label class="form__checkbox checkbox">
           <input
-            class="checkbox__input"
+            class="checkbox__input visually-hidden"
             type="checkbox"
             name="agreement"
+            required
           >
+          <span class="checkbox__emulator" aria-hidden="true"></span>
           <span class="checkbox__label">
             Я принимаю условия использования сервиса и политику обработки персональных данных.
           </span>

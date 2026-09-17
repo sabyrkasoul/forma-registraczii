@@ -273,3 +273,122 @@ h1 {
   outline-offset: 4px;
   transition-duration: 0s !important;
 }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  max-width: 620px;
+  padding: 40px;
+  background-color: var(--color-section-bg);
+  border-radius: var(--border-radius-large);
+}
+
+.registration__header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.registration__description {
+  max-width: 448px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.form__field:nth-child(3),
+.form__checkbox,
+.form__button {
+  grid-column: 1 / -1;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.field__label {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-label);
+}
+
+.field__input {
+  height: var(--input-height);
+  padding-inline: 16px;
+  background-color: var(--color-input-bg);
+  border: var(--border);
+  border-radius: var(--border-radius-small);
+
+  &::placeholder {
+    color: var(--color-dark);
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: start;
+  column-gap: 8px;
+  max-width: 460px;
+  color: var(--color-label);
+}
+
+.checkbox__input {
+  width: 16px;
+  height: 16px;
+  margin-inline: 0;
+  color: var(--color-label);
+  border-radius: 4px;
+
+  &:checked + .checkbox__emulator {
+    background-color: var(--color-label);
+    border-color: var(--color-label);
+    background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 12 10\' fill=\'none\'%3E%3Cpath d=\'M1 5L4.5 8.5L11 1.5\' stroke=\'white\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px 8px;
+  }
+}
+
+.checkbox__emulator {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  transition-duration: var(--transition-duration);
+}
+
+.button {
+  height: var(--button-height);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  border: none;
+  border-radius: var(--border-radius);
+  transition-duration: var(--transition-duration);
+
+  &:hover {
+    background-color: var(--color-label);
+  }
+}
