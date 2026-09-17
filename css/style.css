@@ -255,6 +255,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
   font-family: var(--font-family-base);
   font-weight: 400;
   font-size: 16px;
@@ -390,5 +391,16 @@ h1 {
 
   &:hover {
     background-color: var(--color-label);
+  }
+}
+
+@media (max-width: 767px) {
+  .registration {
+    row-gap: 20px;
+    padding: 20px;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
   }
 }
